@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>🔐​ Generador de contraseñas</title>
+</head>
+<body>
+    <h1 class="tittle">🔐 Generador De Contraseña</h1>
+
+    <form type="submit" class="form-container" id="form">
+        <p id="password" class="password">Tu nueva contraseña es: </p>
+        <div class="option">
+            <input class="checkbox-form" type="range" name="length"  min="10" max="20">
+            <p>Define el total de caracteres para tu contraseña</p>
+        </div>
+        <div class="option">
+            <input class="checkbox-form" type="checkbox" name="letters">
+            <p>Incluir letras</p>
+        </div>
+        <div class="option">
+            <input class="checkbox-form" type="checkbox" name="numbers">
+            <p>Incluir números</p>
+        </div>
+        <div class="option">
+            <input class="checkbox-form" type="checkbox" name="symbols">
+            <p>Incluir símbolos</p>
+        </div>
+        <div class="option">
+            <input class="checkbox-form" type="checkbox" name="words">
+            <p>Incluir palabras</p>
+        </div>
+        <div class="option">
+            <button type="submit" id="btn-generate-password">Generar contraseña</button>
+        </div>
+    </form>
+
+    <script src="./src/index.js"></script>
+</body>
+</html>

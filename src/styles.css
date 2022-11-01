@@ -1,0 +1,45 @@
+:root {
+    --verde-oscuro: #2a8c4a;
+    --verde-medio: #64c27b;
+    --verde-claro: #9bfab0;
+    --verde-menta: #d0fdd7;
+    --blanco: #fff; 
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--verde-menta);
+    color: var(--verde-medio);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.form-container {
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.password {
+    margin: 20px;
+}
+.option {
+    display: flex;
+    margin:  10px;
+}
+.checkbox-form {
+    margin-right: 10px;
+}
+
+
