@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+
 :root {
     --verde-oscuro: #2a8c4a;
     --verde-medio: #64c27b;
@@ -5,6 +7,7 @@
     --verde-menta: #d0fdd7;
     --blanco: #fff; 
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -20,19 +23,35 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    font-family: 'Overpass Mono', monospace;
+}
+.title {
+    color: var(--verde-oscuro);
 }
 .form-container {
     width: 50%;
     height: 50%;
     border-radius: 20px;
-    background-color: var(--blanco);
+    background-color: var(--verde-menta);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--verde-oscuro);
 }
 .password {
     margin: 20px;
+}
+#password:disabled {
+    /* cursos con símbolo de prohibido */
+    cursor: not-allowed;
+    border: 0;
+    border-bottom: 1px solid #2a8c4a;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 26px;
+    width: 80%;
+    color: #2a8c4a;
 }
 .option {
     display: flex;

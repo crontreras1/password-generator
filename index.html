@@ -8,10 +8,14 @@
     <title>🔐​ Generador de contraseñas</title>
 </head>
 <body>
-    <h1 class="tittle">🔐 Generador De Contraseña</h1>
+    <h1 class="title">🔐 Generador De Contraseña</h1>
 
     <form type="submit" class="form-container" id="form">
-        <p id="password" class="password">Tu nueva contraseña es: </p>
+        <p class="password">Tu nueva contraseña es: </p>
+        
+        <input type="text" disabled id="password">
+        <button type="button" id="button-copy">Copiar contraseña</button>
+
         <div class="option">
             <input class="checkbox-form" type="range" name="length"  min="10" max="20">
             <p>Define el total de caracteres para tu contraseña</p>
